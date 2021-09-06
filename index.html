@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- jquery toast -->
+	<link rel="stylesheet" href="plugins/jqueryToast/jquery.toast.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Google drive link generator</title>
+</head>
+
+<body>
+    
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center mb-5">Google Drive Direct Link Generator</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <label for="fileUrl">File Sharable Link</label>
+                    <textarea id="fileUrl" required="" rows="4" class="form-control"></textarea>
+
+                    <small id="urlHelp" class="text-muted d-block mb-3 text-break">Your link should be in a format like: https://drive.google.com/file/d/1dChQaPG89L2XAonzKHxVFK0B4Bv19niX/view?usp=sharing, https://drive.google.com/file/d/1i3K8PNE5ja4CQ4xUNZ9Z8D4hBP3tcj8x/view?usp=sharing </small>
+                    <button class="btn btn-primary" type="button" id="generate">Generate Link</button>
+                            
+                </div>    
+            </div>
+            <div class="mt-4">
+                <div id="result" class="mb-4"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <!-- jquery toast -->
+	<script src="plugins/jqueryToast/jquery.toast.min.js"></script>
+    
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
